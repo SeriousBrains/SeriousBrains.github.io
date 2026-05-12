@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-  Langario landing page v4 — Fredoka logo with thick black stroke, no emoji on buttons
+  Langario landing page v5 — black borders on UI elements, no emoji bullets in Founding
 -->
 <html lang="en">
 <head>
@@ -82,7 +82,7 @@
     .hero-visual { position: relative; }
     .hero-visual img {
       width: 100%; border-radius: 20px;
-      border: 3px solid var(--navy-border);
+      border: 3px solid #000;
       box-shadow: var(--shadow-image);
       transform: rotate(-2deg);
     }
@@ -115,15 +115,15 @@
     .card {
       background: var(--navy-light);
       border-radius: var(--radius-md);
-      border: 1px solid var(--navy-border);
+      border: 2px solid #000;
       overflow: hidden;
-      transition: transform 0.25s ease, border-color 0.25s ease;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
     }
-    .card:hover { transform: translateY(-4px); border-color: var(--blue); }
+    .card:hover { transform: translateY(-4px); box-shadow: 0 6px 0 #000; }
     .card-image {
       width: 100%; aspect-ratio: 16 / 9;
       object-fit: cover; display: block;
-      border-bottom: 1px solid var(--navy-border);
+      border-bottom: 2px solid #000;
       background: var(--navy);
     }
     .card-body { padding: 22px 24px 26px; }
@@ -135,7 +135,7 @@
     .trailer-wrapper {
       position: relative; padding-bottom: 56.25%; height: 0;
       border-radius: var(--radius-md); overflow: hidden;
-      box-shadow: var(--shadow-card); border: 1px solid var(--navy-border);
+      box-shadow: var(--shadow-card); border: 2px solid #000;
     }
     .trailer-wrapper iframe {
       position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;
@@ -149,11 +149,11 @@
     .founding p.section-lead { margin-left: auto; margin-right: auto; }
     .founding ul { list-style: none; max-width: 560px; margin: 0 auto 32px; text-align: left; }
     .founding ul li {
-      padding: 14px 18px; background: var(--navy-light); border: 1px solid var(--navy-border);
-      border-radius: var(--radius-sm); margin-bottom: 10px; font-size: 1rem;
-      display: flex; align-items: center; gap: 14px;
+      padding: 14px 18px; background: var(--navy-light);
+      border: 2px solid #000;
+      border-radius: var(--radius-sm); margin-bottom: 10px;
+      font-size: 1rem; color: var(--gray);
     }
-    .founding ul li .bullet { font-size: 1.3rem; flex-shrink: 0; }
     .email-capture { background: var(--navy-dark); text-align: center; }
     .email-capture .container { max-width: 720px; }
     footer {
@@ -284,10 +284,10 @@
       <h2>Join the first wave</h2>
       <p class="section-lead">Players who join during the demo phase become Founding Players. After this phase closes, the role is gone for good.</p>
       <ul>
-        <li><span class="bullet">🏆</span>A permanent in-game badge, kept on your avatar for life</li>
-        <li><span class="bullet">🗳️</span>A vote on the next language we add to the game</li>
-        <li><span class="bullet">🎬</span>Your name in the credits when the full version ships</li>
-        <li><span class="bullet">💬</span>A direct line to the team through the Discord</li>
+        <li>A permanent in-game badge, kept on your avatar for life</li>
+        <li>A vote on the next language we add to the game</li>
+        <li>Your name in the credits when the full version ships</li>
+        <li>A direct line to the team through the Discord</li>
       </ul>
       <a href="https://discord.gg/UX4aDQSNCj" class="btn">Join the Discord</a>
     </div>
